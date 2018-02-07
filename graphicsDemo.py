@@ -9,11 +9,18 @@ green = Color(0x00FF00, 1)
 blue = Color(0x0000FF, 1)
 black = Color(0x000000, 1)
 
-blackOutline = LineStyle(1,black) #first number is how many pixels wide
+blackOutline = LineStyle(2,black) #first number is how many pixels wide
 
 redRectangle = RectangleAsset(200,100,blackOutline,red) #width, height, outline, fill color
 blueCircle = CircleAsset(50,blackOutline,blue) #radius, outline, fill
+greenEllipse = EllipseAsset(100,50,blackOutline,green) #width, height, outline, fill
+blackLine = LineAsset(50,160,blackOutline) #x_endpoint,y_endpoint,linestyle (starts from origin)
+redTriangle = PolygonAsset([(0,0),(120,180),(60,300)],blackOutline,red) #endpoints, outline, fill
 
 Sprite(redRectangle)
-Sprite(blueCircle)
+Sprite(greenEllipse,(0,100))
+Sprite(blueCircle,(50,50)) #how many over, how many down
+Sprite(blackLine)
+Sprite(redTriangle,(200,0))
+
 App().run()
