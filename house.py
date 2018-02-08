@@ -27,6 +27,6 @@ Sprite(eraseLittle, (180,100))
 Sprite(eraseLittle, (240,100))
 Sprite(eraseLittle, (300,100))
 Sprite(eraseLittle, (360,100))
-Sprite(door, (150,100))
+Sprite(door, (570/2-100,200))
 
 App().run()
