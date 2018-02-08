@@ -16,11 +16,13 @@ blueCircle = CircleAsset(50,blackOutline,blue) #radius, outline, fill
 greenEllipse = EllipseAsset(100,50,blackOutline,green) #width, height, outline, fill
 blackLine = LineAsset(50,160,blackOutline) #x_endpoint,y_endpoint,linestyle (starts from origin)
 redTriangle = PolygonAsset([(0,0),(120,180),(60,300)],blackOutline,red) #endpoints, outline, fill
+text = TextAsset('whaddup',fill=green,style='bold 40pt Times') #can do whatever, just say what it is
 
 Sprite(redRectangle)
 Sprite(greenEllipse,(0,100))
 Sprite(blueCircle,(50,50)) #how many over, how many down
 Sprite(blackLine)
+Sprite(text,(300,200))
 Sprite(redTriangle,(200,0))
 
 App().run()
