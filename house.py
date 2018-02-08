@@ -18,6 +18,9 @@ Sprite(bigRectangle)
 Sprite(eraseBig, (150,0))
 Sprite(eraseLittle, (30,0))
 Sprite(eraseLittle, (90,0))
-
+Sprite(eraseLittle, (30,0))
+Sprite(eraseLittle, (90,0))
+Sprite(eraseLittle, (480,0))
+Sprite(eraseLittle, (540,0))
 
 App().run()
