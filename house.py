@@ -16,7 +16,7 @@ bigRectangle = RectangleAsset(570,300,goldOutline,gold)
 eraseBig = RectangleAsset(270,100,whiteOutline,white)
 eraseLittle = RectangleAsset(30,20,whiteOutline,white)
 door = EllipseAsset(150,200,whiteOutline,white)
-text = TextAsset("My house is a castle",fill=black,style="italics 40pt zapfino")
+text = TextAsset("My house is a castle",fill=black,style="bold italic 40pt Times")
 
 Sprite(bigRectangle)
 Sprite(eraseBig, (150,0))
@@ -31,6 +31,7 @@ Sprite(eraseLittle, (240,100))
 Sprite(eraseLittle, (300,100))
 Sprite(eraseLittle, (360,100))
 Sprite(door, (570/2-150,200))
+Sprite(text, (10,50))
 
 
 App().run()
