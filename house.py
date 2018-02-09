@@ -6,14 +6,17 @@ from ggame import *
 
 gold = Color(0xF2DE5A, 1)
 white = Color(0xFFFFFF, 1)
+black = Color(0x000000, 1)
 
 goldOutline = LineStyle(1,gold)
 whiteOutline = LineStyle(1,white)
+blackOutline = LineStyle(2,black)
 
 bigRectangle = RectangleAsset(570,300,goldOutline,gold)
 eraseBig = RectangleAsset(270,100,whiteOutline,white)
 eraseLittle = RectangleAsset(30,20,whiteOutline,white)
-door = EllipseAsset(100,200,whiteOutline,white)
+door = EllipseAsset(150,200,whiteOutline,white)
+text = TextAsset("My house is a castle",fill=black,style="italics 40pt zapfino")
 
 Sprite(bigRectangle)
 Sprite(eraseBig, (150,0))
@@ -27,6 +30,7 @@ Sprite(eraseLittle, (180,100))
 Sprite(eraseLittle, (240,100))
 Sprite(eraseLittle, (300,100))
 Sprite(eraseLittle, (360,100))
-Sprite(door, (570/2-100,200))
+Sprite(door, (570/2-150,200))
+
 
 App().run()
