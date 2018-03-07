@@ -3,6 +3,7 @@
 #graphAPoint.py - version 2 because who knows where the first one went
 
 from ggame import *
+from math import sin, cos
 
 print('Input function')
 function = input('y=')
@@ -30,7 +31,7 @@ for i in range(13):
 
 while x<= 10:
     y = eval(function)
-    print('('+str(x)+','+str(y)+')')
+    #print('('+str(x)+','+str(y)+')')
     Sprite(point,((270+(x*45),270-(y*45))))
     x = x + 0.5
 
