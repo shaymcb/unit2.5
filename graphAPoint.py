@@ -7,7 +7,8 @@ from ggame import *
 print('Input function')
 function = input('y=')
 
-
+x = -10
+scale = 10
 
 black = Color(0x000000,1)
 white = Color(0xFFFFFF,1)
@@ -18,7 +19,7 @@ xAxis = LineAsset(540,0,blackLine)
 yAxis = LineAsset(0,540,blackLine)
 yTick = LineAsset(30,0,blackLine)
 xTick = LineAsset(0,30,blackLine)
-point = CircleAsset(5,blackLine,black)
+point = CircleAsset(3,blackLine,black)
 
 Sprite(square)
 Sprite(xAxis,(0,540/2))
@@ -27,9 +28,10 @@ for i in range(13):
     Sprite(yTick,(540/2-15,i*45))
     Sprite(xTick,(i*45,540/2-15))
 
-for x in range(-10,11,0.1):
+while x<= 10:
     y = eval(function)
     print('('+str(x)+','+str(y)+')')
     Sprite(point,((270+(x*45),270-(y*45))))
+    x = x + 0.5
 
 App().run()
